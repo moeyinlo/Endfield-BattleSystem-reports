@@ -4079,6 +4079,8 @@
       
         
       
+        
+      
     
     
     
@@ -4772,6 +4774,168 @@
       
         
       
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="countdown/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    倒计时与玩法计时
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7_5" id="__nav_3_7_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    倒计时与玩法计时
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="countdown/countdown-manager.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CountdownManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="countdown/sub-game-timer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SubGame 计时
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="countdown/game-time-freeze.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GameTimeFreeze
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
         
       
         
@@ -4808,7 +4972,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -4830,14 +4994,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_7_5" id="__nav_3_7_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_7_6" id="__nav_3_7_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -6208,6 +6372,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        总览图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        各层职责
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timedilation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TimeDilation 与真正暂停的区别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        判断一段倒计时属于哪种系统
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分类入口
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -6224,21 +6451,164 @@
 
 
 <h1 id="_1">时间系统<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>TimeDilation 是原游戏统一的时间缩放系统，覆盖通用慢动作、Entity 冻结、HitStop 和大招动画时停。大招不是独立暂停系统，而是 Global 层 <code>UltimateTime</code> instance，参与通用 slot/priority 竞争和 TickOwner timeScale 传播。
-核心规则：</p>
+<p>状态：<code>documented / 已确认</code>
+更新时间：2026-07-03</p>
+<p>原游戏里“时间停止/倒计时暂停”不是单一系统，而是几套互相叠加的时间层：</p>
 <ol>
-<li>Global 层同 slot 竞争；Entity 层同 target 且同 slot 竞争。</li>
-<li>旧 priority &gt; 新 priority 时新实例不会加入。</li>
-<li>新 priority &gt;= 旧 priority 时旧实例 <code>Stop()</code> 并移除，新实例加入。</li>
-<li>不同 slot 同时存在时，gameplay effective scale 取各 slot winner 的最小值。</li>
-<li><code>TimeDilationManager</code> 自身 ignore global timeScale，因此全局时停期间仍会 tick 并清理过期实例。</li>
-<li><code>BattleManager.Tick</code> 不直接处理 TimeDilation，只消费 TickOwner/TimeManager 链路缩放后的 delta。</li>
+<li><code>TimeManager</code> 保存全局 <code>timeScale</code>、unscaled/scaled delta、tick root 和 <code>TimerGroup</code>。</li>
+<li><code>TickOwnerInfo</code> / <code>TickOwnerInfoGroup</code> 把全局缩放传播给实体、manager、技能 timeline 等 tick owner。</li>
+<li><code>TimeDilationManager</code> 管理 Global / Entity TimeDilation、HitStop、PoiseBreak 时停和 UltimateTime。</li>
+<li><code>CountdownManager</code> 是脚本侧本地倒计时；它靠每帧传入的 <code>deltaTime</code> 做减法。</li>
+<li><code>SubGameCountDown</code> / <code>SubGameCounting</code> 是玩法实例的服务器时间戳计时器；它不靠每帧减 <code>deltaTime</code>。</li>
+<li><code>SubGameManager.TryPauseGameTime</code> / <code>TryResumeGameTime</code> 才是真正的 SubGame 玩法时间暂停/恢复入口，会同时通知服务器和当前 top subgame。</li>
 </ol>
-<p>分类入口：</p>
+<p>因此，看到 UI 上的倒计时停住时，需要先区分它停的是哪一层：可能只是本地 UI 刷新或本地 <code>CountdownManager</code> 被 global TimeDilation 冻住，也可能是真正的 SubGame game time 被暂停。</p>
+<h2 id="_2">总览图<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    A["Unity / OS unscaled frame time"]
+    B["TimeManager: unscaledDeltaTime / timeScale"]
+    C["TickRoot: Frame / PostFrame / Late / TailLate"]
+    D["TickOwnerInfoGroup final timeScale"]
+    E["Gameplay tick owners: entity / skill / buff / manager"]
+    F["TimerGroup: unscaled lane"]
+    G["TimerGroup: scaled lane"]
+    H["TimeDilationManager&lt;br/&gt;ignoreGlobalTimeScale=true"]
+    I["CountdownManager&lt;br/&gt;ignoreGlobalTimeScale=false"]
+    J["SubGameCountDown / SubGameCounting&lt;br/&gt;server timestamp + deltaProvider"]
+    K["SubGameManager.TryPauseGameTime&lt;br/&gt;BaseSubGame.Pause/Resume"]
+
+    A --&gt; B
+    B --&gt; C
+    B --&gt; F
+    B --&gt; G
+    C --&gt; D
+    D --&gt; E
+    C --&gt; H
+    C --&gt; I
+    H --&gt; B
+    K --&gt; J
+    K --&gt; E</code></pre>
+<h2 id="_3">各层职责<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>代表类型 / 入口</th>
+<th>推进方式</th>
+<th>global <code>timeScale = 0</code> 时</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unity / unscaled frame</td>
+<td>Unity player loop</td>
+<td>真实帧时间</td>
+<td>不受影响</td>
+<td>所有上层 delta 的源头。</td>
+</tr>
+<tr>
+<td><code>TimeManager</code> 全局时间</td>
+<td><code>TimeManager.Tick</code> / <code>TailLateTick</code></td>
+<td><code>m_unscaledDeltaTime</code> 与 <code>m_timeScale * m_unscaledDeltaTime</code></td>
+<td>scaled delta 变为 <code>0</code>，unscaled delta 继续</td>
+<td>全局 time scale、tick root、timer group。</td>
+</tr>
+<tr>
+<td>TickOwner 缩放传播</td>
+<td><code>TickOwnerInfo</code>、<code>TickOwnerInfoGroup</code></td>
+<td><code>self/additional scale * group final scale</code></td>
+<td>非 ignore-global owner 得到 <code>0</code> delta</td>
+<td>实体、技能、Buff、普通 manager 的 tick 缩放。</td>
+</tr>
+<tr>
+<td><code>TimeDilationManager</code></td>
+<td><code>StartGlobalTimeDilation</code>、<code>StartEntityTimeDilation</code>、<code>StartUltimateTime</code></td>
+<td>自身 <code>ignoreGlobalTimeScale=true</code>，<code>1/30s</code> tick</td>
+<td>自己仍继续 tick；被影响对象变慢/停止</td>
+<td>大招时停、HitStop、冰冻、失衡时停、全局慢动作。</td>
+</tr>
+<tr>
+<td><code>TimerGroup</code></td>
+<td><code>TimeManager.AddDelayTimer</code> / <code>AddLoopTimer</code></td>
+<td>unscaled lane 或 scaled lane</td>
+<td>unscaled 继续；scaled 暂停</td>
+<td>通用 delay / loop timer。</td>
+</tr>
+<tr>
+<td><code>CountdownManager</code></td>
+<td><code>StartCountdown</code>、<code>ShowCountdownUI</code>、<code>EndCountdown</code></td>
+<td>每 tick 执行 <code>left -= deltaTime</code></td>
+<td>因 <code>ignoreGlobalTimeScale=false</code>，传入 delta 变 <code>0</code>，倒计时暂停</td>
+<td>关卡脚本/本地 UI 倒计时。</td>
+</tr>
+<tr>
+<td><code>SubGameCountDown</code> / <code>SubGameCounting</code></td>
+<td><code>BaseSubGame.StartSubGameCountDown</code> / <code>StartSubGameCounting</code></td>
+<td>时间戳公式：当前时间 + freeze/delta 修正</td>
+<td>不直接因 UltimateTime 停；显示刷新可能停</td>
+<td>副本、挑战、机制条等 SubGame 计时。</td>
+</tr>
+<tr>
+<td>SubGame game-time freeze</td>
+<td><code>SubGameManager.TryPauseGameTime</code> / <code>TryResumeGameTime</code></td>
+<td>服务器 pause + <code>BaseSubGame.m_pauseMask</code></td>
+<td>与 TimeDilation 是独立链路</td>
+<td>对真正玩法时间计时生效。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="timedilation">TimeDilation 与真正暂停的区别<a class="headerlink" href="#timedilation" title="Permanent link">&para;</a></h2>
+<p><code>UltimateTimeAction</code> 调用 <code>TimeDilationManager.StartUltimateTime(...)</code>，最终创建 Global <code>UltiSkill</code> slot 的 TimeDilation instance。大多数大招把 <code>timeScale</code> 设为 <code>0</code>，所以普通实体 tick、技能 timeline、scaled <code>TimerGroup</code>、本地 <code>CountdownManager</code> 都会停住。</p>
+<p>但这个链路不会自动调用 <code>SubGameManager.TryPauseGameTime</code>。也就是说：</p>
+<ul>
+<li>大招时停是 <strong>global TimeDilation freeze</strong>；</li>
+<li><code>CountdownManager</code> 停住是 <strong>本地 scaled tick 被冻住</strong>；</li>
+<li><code>SubGameCountDown</code> / <code>SubGameCounting</code> 的真实玩法计时暂停，必须看 <strong>SubGame game-time freeze</strong> 是否发生。</li>
+</ul>
+<h2 id="_4">判断一段倒计时属于哪种系统<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>现象 / 数据入口</th>
+<th>优先判断</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action graph 里出现 <code>StartCountdown</code>、<code>ShowCountdownUI</code>、<code>EndCountdown</code></td>
+<td><code>CountdownManager</code></td>
+<td>本地倒计时 id，受 global TimeDilation 影响。</td>
+</tr>
+<tr>
+<td>代码调用 <code>TimeManager.AddDelayTimer</code> / <code>AddLoopTimer</code></td>
+<td><code>TimerGroup</code></td>
+<td>看 <code>unscaled</code> 参数决定是否受 global scale 影响。</td>
+</tr>
+<tr>
+<td>SubGame / dungeon / challenge UI 条由 <code>ON_ADD_COUNT_DOWN_BAR</code> 打开</td>
+<td><code>SubGameCountDown</code></td>
+<td>时间戳倒计时，不是 per-frame 减法。</td>
+</tr>
+<tr>
+<td>SubGame 计时在剧情、黑屏、传送、演出中真正暂停</td>
+<td><code>TryPauseGameTime(PauseGameTimeInPerformance)</code></td>
+<td>通过 <code>m_pauseMask</code> 和服务器暂停链路累计 freeze/delta。</td>
+</tr>
+<tr>
+<td>只有大招动画期间画面和 UI 数字不动</td>
+<td>先看 TimeDilation 和 UI 刷新</td>
+<td>可能只是 UI 刷新 tick 停住；真实 SubGame 时间未必暂停。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">分类入口<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="actions/index.html">Action/Data</a></li>
 <li><a href="runtime/index.html">Runtime</a></li>
 <li><a href="config/time-dilation-config.html">Config</a></li>
+<li><a href="countdown/index.html">倒计时与玩法计时</a></li>
 <li><a href="tick/index.html">Tick</a></li>
 </ul>
 

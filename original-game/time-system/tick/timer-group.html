@@ -4079,6 +4079,8 @@
       
         
       
+        
+      
     
     
     
@@ -4757,6 +4759,168 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../countdown/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    倒计时与玩法计时
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_7_5" id="__nav_3_7_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    倒计时与玩法计时
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../countdown/countdown-manager.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CountdownManager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../countdown/sub-game-timer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SubGame 计时
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../countdown/game-time-freeze.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GameTimeFreeze
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -4810,7 +4974,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -4832,14 +4996,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3_7_5" id="__nav_3_7_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3_7_6" id="__nav_3_7_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_7_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_7_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_7_6">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5330,6 +5494,17 @@
     <span class="md-ellipsis">
       
         生命周期
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#countdownmanager-subgamecountdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与 CountdownManager / SubGameCountDown 的区别
       
     </span>
   </a>
@@ -6429,6 +6604,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#countdownmanager-subgamecountdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与 CountdownManager / SubGameCountDown 的区别
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6610,6 +6796,35 @@
 <li>若仍 active 且有剩余循环，更新 <code>expireTime</code> 后重新进入 active heap。</li>
 <li><code>ClearTimer</code> 或 callback 内部改变状态时，timer 进入 pending remove / remove path。</li>
 </ol>
+<h2 id="countdownmanager-subgamecountdown">与 CountdownManager / SubGameCountDown 的区别<a class="headerlink" href="#countdownmanager-subgamecountdown" title="Permanent link">&para;</a></h2>
+<p><code>TimerGroup</code> 是 <code>TimeManager</code> 下的通用 delay / loop timer 容器，不是 UI 倒计时系统。它有两条 lane：</p>
+<table>
+<thead>
+<tr>
+<th>lane</th>
+<th><code>TimeManager.Tick</code> 传入 delta</th>
+<th>global <code>timeScale=0</code> 时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>m_unscaledTimerGroup</code></td>
+<td><code>m_unscaledDeltaTime</code></td>
+<td>继续推进</td>
+</tr>
+<tr>
+<td><code>m_scaledTimerGroup</code></td>
+<td><code>m_timeScale * m_unscaledDeltaTime</code></td>
+<td>暂停</td>
+</tr>
+</tbody>
+</table>
+<p>和其它计时系统的区别：</p>
+<ul>
+<li><code>CountdownManager</code> 也使用 scaled tick，但它保存的是 countdown id -&gt; 剩余秒数，并在每帧做 <code>left -= deltaTime</code>。</li>
+<li><code>SubGameCountDown</code> 保存的是服务器结束时间戳，并在读取时用 <code>deltaProvider</code> 计算剩余毫秒；它不属于 <code>TimerGroup</code>。</li>
+<li>真正暂停 SubGame 玩法时间的入口是 <code>SubGameManager.TryPauseGameTime</code>，不是 <code>TimerGroup.ClearTimer</code> 或 <code>TimeDilationManager.StartUltimateTime</code>。</li>
+</ul>
 
 
 
